@@ -1,0 +1,37 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Регистрация</h1>
+        <p>Создайте новый аккаунт</p>
+    </header>
+
+    <section class="register-form">
+        <form id="register-form">
+            <label for="new-username">Логин:</label>
+            <input type="text" id="new-username" placeholder="Введите логин" required>
+            <label for="new-password">Пароль:</label>
+            <div class="password-container">
+                <input type="password" id="new-password" placeholder="Введите пароль" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility('new-password')">👁️</span>
+            </div>
+            <label for="confirm-password">Подтвердите пароль:</label>
+            <div class="password-container">
+                <input type="password" id="confirm-password" placeholder="Подтвердите пароль" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility('confirm-password')">👁️</span>
+            </div>
+            <button type="submit" class="btn">Зарегистрироваться</button>
+            <p id="register-success" style="color: green; display: none;">Вы успешно зарегистрированы!</p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
