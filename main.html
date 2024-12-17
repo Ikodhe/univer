@@ -11,9 +11,8 @@
         <h1>Nikegostyan</h1>
         <p>ваш ключ к безграничной связи!</p>
         <div class="top-buttons">
-            <a href="#">Sign in</a>
-            <a href="#">Register</a>
-            <a href="#" style="background-color: red; border: none;">Выход</a>
+            <a href="#" id="sign-in-btn">Sign in</a>
+            <a href="#" id="account-btn" class="account-btn" style="display: none;">Аккаунт</a>
         </div>
     </header>
 
@@ -72,6 +71,31 @@
         </div>
     </section>
 
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Вход</h2>
+            <form id="login-form">
+                <label for="username">Логин:</label>
+                <input type="text" id="username" placeholder="Введите логин" required>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" placeholder="Введите пароль" required>
+                <button type="submit" class="btn">Войти</button>
+                <p id="login-success" style="color: green; display: none;">Вы успешно вошли!</p>
+                <p><a href="register.html" id="register-link" style="text-decoration: none;">Вы еще не зарегистрированы?</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="account-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Аккаунт</h2>
+            <p id="account-login"></p>
+            <button id="logout-btn" class="btn">Выход из аккаунта</button>
+        </div>
+    </div>
+
     <footer>
         <div>
             <p><strong>Адрес:</strong></p>
@@ -92,5 +116,7 @@
             <a href="#">🔗 VK</a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
