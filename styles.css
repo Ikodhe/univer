@@ -1,7 +1,9 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f8f8f8;
     color: #333;
 }
@@ -90,6 +92,7 @@ header p {
 }
 
 .price {
+    font-family: 'Roboto', sans-serif;
     font-size: 32px;
     color: #333;
     font-weight: bold;
@@ -129,6 +132,7 @@ header p {
 }
 
 .why-us {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     margin: 50px auto;
     padding: 20px;
@@ -324,6 +328,10 @@ footer p {
     flex: 1;
 }
 
+.toggle-password {
+    margin-left: 10px;
+    cursor: pointer;
+}
 .toggle-password {
     margin-left: 10px;
     cursor: pointer;
